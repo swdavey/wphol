@@ -19,7 +19,7 @@ An Oracle Cloud account is required and enough privileges to
 - create and manage MySQL HeatWave Database Instances
 We recommend to use an administrative account and a dedicated compartment.
 
-If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial account with FREE 300 USD credits here [https://www.oracle.com/cloud/free/]
+If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial account with FREE 300 USD credits [here] (https://www.oracle.com/cloud/free/)
 
 ## Lab preparation
 Deploy Wordpress on Oracle Cloud Intrastructure (OCI) and MySQL Database Service (MDS) using these Terraform modules.
