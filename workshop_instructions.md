@@ -23,23 +23,23 @@ If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial a
 
 ## Lab tasks
 
-1. Create your starting environment
+1. Create your starting environment  
 [click here](./lab_preparation.md)
 
-2. Test your wordpress installation
+2. Test your wordpress installation  
 [click here](./wordpress_test_installation.md)
 
-3. Check your MySQL HeatWave Database instance
+3. Check your MySQL HeatWave Database instance  
 [click here]()
 
-4. Scale your service with a bigger MySQL HeatWave Database shape
+4. Scale your service with a bigger MySQL HeatWave Database shape  
 [click here](./mds_scale_shape.md)
 
-5. Improve the Business Continuity: enable the MySQL HeatWave Database Instance High Availability
+5. Improve the Business Continuity: enable the MySQL HeatWave Database Instance High Availability  
 [click here](./mds_enable_ha.md)
 
-6. Improve the Business Continuity: enable point in time recovery
+6. Improve the Business Continuity: enable point in time recovery  
 [click here](./mds_enable_pitr.md)
 
-7. Scale your service with Read Replicas
+7. Scale your service with Read Replicas  
 [click here](./mds_read_replicas)
