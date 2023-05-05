@@ -37,4 +37,8 @@ Insert your tenancy name and click next
 7. The job start and after few seconds you can see the logs.
     the script requires about 15/20 minutes to complete.
 
-**[Next lab](./wordpress_test_installation.md)**
+8. When the job move "IN PROGRESS" (orange) state to "SUCCEEDED" state (green) you can go to next lab 
+
+    ![OCI create stack third page: job succeeded](./images/OCI-create_stack_job_succeeded.png)
+
+9. **[Next lab](./wordpress_test_installation.md)**

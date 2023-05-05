@@ -30,7 +30,7 @@ If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial a
 [click here](./wordpress_test_installation.md)
 
 3. Check your MySQL HeatWave Database instance  
-[click here]()
+[click here](./mds_overview.md)
 
 4. Scale your service with a bigger MySQL HeatWave Database shape  
 [click here](./mds_scale_shape.md)
