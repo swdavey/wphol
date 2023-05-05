@@ -83,7 +83,7 @@ echo "Webserver stopped" >> install.log
 sed -i "s/app-public-ip/$WP_PUBLIC_IP/g" wp.sql >> install.log
 sed -i "s/wp-admin-user/$WP_ADMIN_USER/g" wp.sql >> install.log
 sed -i "s/wp-admin-email/$WP_ADMIN_EMAIL/g" wp.sql >> install.log
-"Dump edited." >> install.log
+echo "Dump edited." >> install.log
 mysql -u$MDS_ADMIN_USER -p$MDS_ADMIN_PASSWORD -h$MDS_PRIVATE_IP < wp.sql
 echo "Database restaurant tables restored" >> install.log
 
