@@ -19,15 +19,21 @@ An Oracle Cloud account is required and enough privileges to
 - create and manage MySQL HeatWave Database Instances
 We recommend to use an administrative account and a dedicated compartment.
 
-If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial account with FREE 300 USD credits [here](https://www.oracle.com/cloud/free/)
+If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial account with FREE 300 USD credits [here](https://www.oracle.com/cloud/free/).
 
 ## Lab preparation
-Deploy Wordpress on Oracle Cloud Intrastructure (OCI) and MySQL Database Service (MDS) using these Terraform modules.
+Deploy Wordpress on Oracle Cloud Intrastructure (OCI) and MySQL Database Service (MDS) using Terraform modules.
 
-The same modules are used as Resource Manager Stack.
-
-The latest stack can be downloaded directly in the releases (the zip file)
-
-Use button below to start the stack
+1. Use button below to start the stack
 
 [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v2.0/stack_wordpress_mds.zip)
+
+2. The script connect you to OCI login page.
+Insert your tenancy name and click next
+![OCI tenancy login page](./images/OCI_login-tenancy.png)
+
+3. Expand **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username and password
+![OCI username login page](./images/OCI_login-username_and_password.png)
+
+4. The welcome stack ask you to insert the mandatory information
+ 
