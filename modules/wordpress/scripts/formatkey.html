@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Format application server's private key</h2>
+<ol>
+  <li>Go to the OCI ORM job page that created the application server and click on its <b>Job resources</b> link.</li>
+  <li>In Job resources scroll down to the item named <b>tls_private_key.public_private_key_pair</b> and click on its <b>Copy</b> link.</li>
+  <li>Paste the copied information into the text area below,</li>
+  <li>Click on Submit.</li>
+  <li>A new page will be shown detailing the properly formatted key. Copy all of the text and save it to a file on your pc, e.g. wordpress.pem</li>
+</ol>
+<form action="format.php" method="post">
+  <textarea id="rawtls" name="rawtls" rows="24" cols="160"></textarea>
+  <p>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
