@@ -104,6 +104,34 @@ resource "oci_core_instance" "WordPress" {
   }
 
   provisioner "file" {
+    source      = "${path.module}/scripts/formatkey.html"
+    destination = "~/formatkey.html"
+
+    connection  {
+      type        = "ssh"
+      host        = self.public_ip
+      agent       = false
+      timeout     = "5m"
+      user        = var.vm_user
+      private_key = var.ssh_private_key
+    }
+  }
+
+  provisioner "file" {
+    source      = "${path.module}/scripts/install_formatkey.sh"
+    destination = "~/install_formatkey.sh"
+
+    connection  {
+      type        = "ssh"
+      host        = self.public_ip
+      agent       = false
+      timeout     = "5m"
+      user        = var.vm_user
+      private_key = var.ssh_private_key
+    }
+  }
+
+  provisioner "file" {
     content     = data.template_file.install_php.rendered
     destination = local.php_script
 
@@ -159,7 +187,7 @@ resource "oci_core_instance" "WordPress" {
     }
   }
 
- provisioner "file" {
+  provisioner "file" {
     content     = data.template_file.install_restaurant.rendered
     destination = local.restaurant_script
 
@@ -173,7 +201,7 @@ resource "oci_core_instance" "WordPress" {
     }
   }
 
-   provisioner "remote-exec" {
+  provisioner "remote-exec" {
     connection  {
       type        = "ssh"
       host        = self.public_ip
@@ -194,11 +222,12 @@ resource "oci_core_instance" "WordPress" {
        "chmod +x ${local.create_wp_db}",
        "sudo ${local.create_wp_db}",
        "chmod +x ${local.restaurant_script}",
-       "sudo ${local.restaurant_script}"
-       
+       "sudo ${local.restaurant_script}",
+       "chmod +x /home/opc/install_formatkey.sh",
+       "sudo /home/opc/install_formatkey.sh"
+            
     ]
-
-   }
+  }
 
   timeouts {
     create = "10m"
