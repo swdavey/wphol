@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp ~/formatKey.html /var/www/html
-chown apache:apache /var/www/html/formatKey.html
+cp ~/formatkey.html /var/www/html/formatkey.html
+chown apache:apache /var/www/html/formatkey.html
