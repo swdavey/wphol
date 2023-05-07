@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
+<head>
     <style>
     /* Set additional styling options for the columns */
     .column {
-    float: left;
+        float: left;
     }
 
     /* Set width length for the left and right columns */
     .left {
-    width: 50%;
+        width: 50%;
     }
     
     .right {
-    width: 50%;
+        width: 50%;
     }
 
     .row:after {
-    content: "";
-    display: table;
-    clear: both;
+        content: "";
+        display: table;
+        clear: both;
     }
 	
-	.wrapper {
+    .wrapper {
         padding: 10px;
     }
      
     textarea {
-		width: 100%;
-		font-size: 10px;
-		box-sizing: border-box;
-		border: 5px solid #ccc;
-		border-radius: 4px;
-		background-color: #f8f8f8;
-		resize: none;
+	width: 100%;
+	font-size: 10px;
+	box-sizing: border-box;
+	border: 5px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
     }
 	
-	button {
-		padding: 5px 10px;
-		box-sizing: border-box;
-		resize: none;
-	}
+    button {
+	padding: 5px 10px;
+	box-sizing: border-box;
+	resize: none;
+    }
 	
-	h2 {
-		font-size: 20px;
-		padding-left: 10px;
-	}
+    h2 {
+	font-size: 20px;
+	padding-left: 10px;
+    }
 	
-	li {
-		font-size: 16px;
-	}
+    li {
+	font-size: 16px;
+    }
 		
     </style>
 	<script>
@@ -107,30 +107,30 @@
  </head>
  <body>
 	<div>
-	<h2>Format the application server's private key</h2>
-	<ol>
-		<li>Paste (CTRL-V) the copied TLS information into the left-hand text area</li>
-		<li>Scroll down to the format button and click on it</li>
-		<li>In the right-hand text area select all the text (CTRL-A) and then copy it (CTRL-C)</li>
-		<li>Paste the copied key into a text editor and save it to your PC</li>
-	</ol>
+		<h2>Format the application server's private key</h2>
+		<ol>
+			<li>Paste (CTRL-V) the copied TLS information into the left-hand text area</li>
+			<li>Scroll down to the format button and click on it</li>
+			<li>In the right-hand text area select all the text (CTRL-A) and then copy it (CTRL-C)</li>
+			<li>Paste the copied key into a text editor and save it to your PC</li>
+		</ol>
 	</div>
-    <div class="row">
-        <div class="column left">
+    	<div class="row">
+        	<div class="column left">
 			<div class="wrapper">
 				<textarea id="input" name="input" rows="27"></textarea>
 			</div>
-        </div>
-        <div class="column right">
+        	</div>
+        	<div class="column right">
 			<div class="wrapper">
 				<textarea id="output" name="output" rows="27" readonly></textarea>
 			</div>
-        </div>
-    </div>
-    <div>
+        	</div>
+    	</div>
+    	<div>
 		<div class="wrapper">
 			<button type="button" onclick="selector(this)" id="format">Format</button>
 		</div>
-    </div>
- </body>
+    	</div>
+</body>
 </html>
