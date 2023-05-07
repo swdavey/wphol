@@ -254,4 +254,3 @@ module "wordpress" {
   flex_shape_ocpus      = var.node_flex_shape_ocpus
   flex_shape_memory     = var.node_flex_shape_memory
 }
-
