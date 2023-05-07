@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <style>
+    /* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+    /* Set width length for the left and right columns */
+    .left {
+    width: 50%;
+    }
+    
+    .right {
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+	
+	.wrapper {
+        padding: 10px;
+    }
+     
+    textarea {
+		width: 100%;
+		font-size: 10px;
+		box-sizing: border-box;
+		border: 5px solid #ccc;
+		border-radius: 4px;
+		background-color: #f8f8f8;
+		resize: none;
+    }
+	
+	button {
+		padding: 5px 10px;
+		box-sizing: border-box;
+		resize: none;
+	}
+	
+	h2 {
+		font-size: 20px;
+		padding-left: 10px;
+	}
+	
+	li {
+		font-size: 16px;
+	}
+		
+    </style>
+	<script>
+		function formatData(data) {
+			// User may either cut and paste all of the text from the tls information
+			// or just the private key row. If the use pastes all the text (which is
+			// the intended use case then we match using the mainPattern, otherwise
+			// we match using the altPattern.
+		
+			const mainPattern = "private_key_pem: ";
+			const altPattern = "-----BEGIN RSA PRIVATE KEY-----";
+			
+			// Items to remove/replace within matching lines
+			const literalCRLF = "\\n";
+			const actualCRLF = "\n";
+			const withNothing = "";
+			const doubleQuote = "\"";
+			
+			// Split the data variable into lines
+			const lines = data.split(/\n/);
+			
+			// Now perform the match and make changes as necessary to create 
+			// a properly formatted pem private key.
+			if (lines.length == 0) {
+				return "ERROR: nothing submitted for format";
+			} else if (lines.length == 1) {
+				if (lines[0].indexOf(altPattern) != -1) {
+					let s1 = lines[0].replaceAll(literalCRLF,actualCRLF);
+					let s2 = s1.replaceAll(doubleQuote,withNothing);
+					return s2;
+				} else {
+					return "ERROR: input does not match a private key beginning " + altPattern;
+				}
+			} else {
+				for (let i=0; i<lines.length; i++) {
+					if (lines[i].indexOf(mainPattern) != -1) {
+						let s1 = lines[i].replace(mainPattern,withNothing);
+						let s2 = s1.replaceAll(literalCRLF,actualCRLF);
+						let s3 = s2.replaceAll(doubleQuote,withNothing);
+						return s3;
+					}
+				}
+				return "ERROR: input does not match a private key beginning " + mainPattern;
+			}
+		}
+		
+		function selector(obj) {
+			if (obj.id === "format") {
+				var data = document.getElementById("input").value;
+				var formattedData = formatData(data);
+				document.getElementById("output").value = formattedData;
+			}
+		}
+	</script>
+ </head>
+ <body>
+	<div>
+	<h2>Format the application server's private key</h2>
+	<ol>
+		<li>Paste (CTRL-V) the copied TLS information into the left-hand text area</li>
+		<li>Scroll down to the format button and click on it</li>
+		<li>In the right-hand text area select all the text (CTRL-A) and then copy it (CTRL-C)</li>
+		<li>Paste the copied key into a text editor and save it to your PC</li>
+	</ol>
+	</div>
+    <div class="row">
+        <div class="column left">
+			<div class="wrapper">
+				<textarea id="input" name="input" rows="27"></textarea>
+			</div>
+        </div>
+        <div class="column right">
+			<div class="wrapper">
+				<textarea id="output" name="output" rows="27" readonly></textarea>
+			</div>
+        </div>
+    </div>
+    <div>
+		<div class="wrapper">
+			<button type="button" onclick="selector(this)" id="format">Format</button>
+		</div>
+    </div>
+ </body>
+</html>
