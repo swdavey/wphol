@@ -1,4 +1,3 @@
-
 locals {
     db_system_id = var.existing_mds_instance_id ==  "" ? oci_mysql_mysql_db_system.MDSinstance[0].id : var.existing_mds_instance_id
 }
@@ -15,6 +14,12 @@ resource "oci_mysql_mysql_db_system" "MDSinstance" {
     display_name = var.display_name
 
     count = var.existing_mds_instance_id == "" ? 1 : 0
+    backup_policy {
+        pitr_policy {
+            #Required
+            is_enabled = false
+        }
+    }
 
     is_highly_available = var.deploy_ha
 }
