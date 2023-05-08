@@ -5,36 +5,46 @@
 ## Lab preparation
 Deploy Wordpress on Oracle Cloud Intrastructure (OCI) and MySQL Database Service (MDS) using Terraform modules.
 
-1. Use button below to start the stack
+1. Click on the button below to start the stack
 
-[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v2.0/stack_wordpress_mds.zip)
+[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v3.0/stack_wordpress_mds.zip)
 
-2. The script connect you to OCI login page.
-Insert your tenancy name and click next
+2. You will automatically be directed to your OCI login page.
+Enter your tenancy name and click next
 ![OCI tenancy login page](./images/OCI_login-tenancy.png)
-
-3. Expand **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username and password
+Choose **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username and password
 ![OCI username login page](./images/OCI_login-username_and_password.png)
 
-4. The welcome stack page ask you to insert the first stack information
-    1. check **"I have reviewed and accept the Oracle Terms of Use"**
-    2. optionally, assign a name to your stack and insert a description
-    3. Choose the compartment where to create the lab resources
-    4. click next
+3. Upon log-in you will automatically be directed to an OCI Resource Manager **Create Stack** page. This has been pre-populated with fields that will prompt you for the information necessary to build the basic infrastructure and Wordpress site for this hands-on-lab. You will need to enter the following information:
+ 
+    1. Check the **"I have reviewed and accept the Oracle Terms of Use"** checkbox. By checking this box a zip file will be loaded that contains the scripts which will build the infrastructure and Wordpress site.
+    2. Optionally, assign a name to your stack and insert a description.
+    3. Choose the compartment where to create the lab resources.
+    4. Click next.
+    
     ![OCI create stack first page: information](./images/OCI-create_stack_page1.png)
 
-5. Then you need to fill the mandatory variables. You can customize your installation as you prefer, but for the matter of this workshop we focus only on the minimla requirement
-    - **MDS admin user's password**: Insert your MySQL Database password (for this lab we suggest you to use **Welcome1!** )
-    - **MySQL WordPress user's password**: Insert your Wordpress password (please write down this password in a safe place)
-    - **Wordpress administrator's username**: Insert **admin** (in case you choose a different name, please write down in a safe place)
-    - **Email address of the Wordpress administrator**: Insert your email
-    - Keep all other values as provided by the script
+4. On the second page you will have further fields to complete. Please read all these notes before completing this page.
+
+   Notes:
+
+    1. All the mandatory fields must have entries. For convenience all the password fields are preset to the same password. If you leave them as they are then you will be told the password once the build completes. If you change any of the passwords or indeed any of the other preset fields then you **must** make a note of the change because if you forget any of them then you may have to restart the lab.
+    2. For the purposes of the hands-on-lab **do not** check any of the boxes in the Use HA for MDS and Webservers sections. If you do then the build will take too long to complete for the hands-on-lab. You may wish to do a further build after the lab in order to test these items.
+    3. **Do not** check the Use Existing Infrastructure box.
+    4. Assuming you follow the advice above, then all you should need to do is: 
+   
+   Actions (based on the notes above):
+   
+      1. Enter the **Wordpress administrator's username**: insert **admin** (or another name, e.g. fred, but make sure you write it down)
+      2. Enter the **Email address of the Wordpress administrator**: insert your email address (e.g. fred@bedrock.com)
+      3. Click on the Next button
+    
     ![OCI create stack second page: mandatory variables](./images/OCI-create_stack_page2.png)
 
-6. Verify that the checkbox **"Run apply"** is selected and press **Create**
+5. On the third page verify that the checkbox **"Run apply"** is selected and then press **Create**
     ![OCI create stack third page: confirm and create](./images/OCI-create_stack_page2.png)
 
-7. The job start and after few seconds you can see the logs.
-    the script requires about 15/20 minutes to complete.
+6. The job will start and after few seconds you can see the logs.
+    It will take 15-20 minutes to complete.
 
 **[Next lab](./wordpress_test_installation.md)**
