@@ -26,8 +26,20 @@ In order to complete the rest of the lab you will need to log into the applicati
     2. Scroll down to **tls_private_key.public_private_key_pair** row and click on **copy** (note: if your page is displaying the attributes for this resource, then first click on hide otherwise you won't be able to perform the copy)
     ![OCI orm select resources](./images/OCI-orm_select_resources.png)
     3. Open up a browser and enter: http://**public-ip-address**/formatkey.html. The screen shot below for details this. Note that because the URL is using http the browser states that the connection is insecure (i.e. the page was transmitted in the clear). However, the script within the webpage that will convert the key runs entirely within your browser and makes no calls across the internet, etc., Therefore, no information will leave your browser or PC and so the process of converting your key is secure.
-    ![SCRIPT formatkey](./images/SCRIPT_formatkey.png)
-    5. Paste the copied resources into the left-hand text area, then click on the Format button. This will create a properly formatted pem key and will display it in the right-hand text area
+    
+    ![SCRIPT format key](./images/SCRIPT_format_key.png)
+    4. Click in the left hand text area and then paste the copied resources into it. Now click the Format button. This will create a properly formatted pem key and will display it in the right-hand text area. An example is shown below.
 
+    ![SCRIPT format key resource](./images/SCRIPT_format_key_resource.png)
+    
+    5. Now copy the formatted key. It is critically important to copy all of the key: from the very first hyphen (-) to the last. An easy way to select this block of text is to click in the right hand pane and then press ctrl-a on the keyboard. Once the text is selected, press ctrl-c to copy. Alternatively use your mouse to select all the text and then its right button to copy. The image below shows the text you must select.
+    
+    ![SCRIPT format key resource](./images/SCRIPT_format_key_selected.png)
+
+    6. You now need to save the copied pem into a file. Open an edited such as Notepad and paste the copied pem into it. Give the file a name (e.g. wp.pem) and save it to your PC. 
+        - If you are a **Windows user** then it does not matter too much where you save it, a suggestion would be, c:\users\your-name, e.g. c:\users\stuart\wp.pem. If you use PuTTy as an ssh client you will need to convert the pem key into PuTTy's ppk format - use PuTTyGen to do this. 
+        - If you are a **linux user** then you should save the file to your user account's .ssh directory and then change its permission to 644, e.g. if your home account is /home/stuart then save the file to /home/stuart/.ssh/wp.pem then chmod 644 /home/stuart/.ssh/wp.pem.
+    
+    7. You should now be able to log into your application server, using ssh -i path-to-private-key opc@public-ip. An example is shown below. Note that the first time you log in you will be requested to  
 ### A tour of your restaurant site
 Blah
