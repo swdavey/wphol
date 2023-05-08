@@ -45,4 +45,4 @@ In order to complete the rest of the lab you will need to log into the applicati
     There will be a number of scripts and files in the opc home directory. These files are leftovers from the build. Please feel free to look at them, but please **do not attempt to run any of them** as they will most likely destroy what has been built.
     
 ### A tour of your restaurant site
-Blah
+Blah blah
