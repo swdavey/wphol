@@ -3,7 +3,7 @@
 ## Introduction
 In this lab you will test and get to know your Wordpress installation. This lab can only be started once the 
 ## Test Wordpress Installation
-### Confirm the ORM job which builds the infrastructure and site has run successfully
+### Confirm the ORM job (which builds the infrastructure and site) has run successfully
 This job typically takes 15-20 minutes so please be patient. When the job completes the RMJ icon in the top left of the ORM page will turn from amber (updating) to green and will state that the job has succeeded (see below). If it turns red then there is an issue. Scroll to the bottom of the log and use its information to diagnose the issue.
 
 ![OCI orm job complete](./images/OCI-orm_job_complete.png)
