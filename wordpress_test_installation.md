@@ -52,7 +52,7 @@ If you scroll down the page you will see a (very unintersting) post. If you scro
 ![WP checkout](./images/WP_checkout.png)
 
 Once you have placed the order you should see an Order Confirmation screen. This is what the customer sees. As the owner/adminstrator of the site you will have to process the order. To do this you need to log in as the Wordpress administrator. You can achieve this by entering http://public-ip-address/wp-admin and then entering the requested credentials. For example:
-![WP wp admin](./images/WP_wp_admin.png)
+![WP wp wp admin](./images/WP_wp_admin.png)
 
 Once you have logged in you will arrive at the admin dashboard. 
 ![WP wp admin dashboard](./images/WP_admin_dashboard.png)
