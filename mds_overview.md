@@ -4,7 +4,7 @@
 
 ## Check your MySQL HeatWave Database instance
 <details>
-<summary>Task 1 - Explore MySQL HeatWave Database instance details  </summary>
+<summary><b>Task 1 - Explore MySQL HeatWave Database instance details</b></summary>
 
 1. Return to OCI Dashboard
 
