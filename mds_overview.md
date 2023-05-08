@@ -10,7 +10,7 @@
 
 2. Navigate to MySQL HeatWave database instances
 
-    [OCI Burger menu for MySQL HeatWave Database instances](./images/./OCI-burger_menu-databases-db_system.png)
+    ![OCI Burger menu for MySQL HeatWave Database instances](./images/./OCI-burger_menu-databases-db_system.png)
 
 3. On the left menu you can navigate through the various settings
     - **DB systems** contains the list of your MySQL HeatWave Database instances
