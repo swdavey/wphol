@@ -4,7 +4,7 @@
 In this lab you will test and get to know your Wordpress installation. This lab can only be started once the 
 ## Test Wordpress Installation
 ### Confirm the ORM job (which builds the infrastructure and site) has run successfully
-This job typically takes 15-20 minutes so please be patient. When the job completes the RMJ icon in the top left of the ORM page will turn from amber (updating) to green and will state that the job has succeeded (see below). If it turns red then there is an issue. Scroll to the bottom of the log and use its information to diagnose the issue.
+This job typically takes 15-20 minutes so please be patient. When the job completes the RMJ icon in the top left of the ORM page will turn from orange (updating) to green and will state that the job has succeeded (see below). If it turns red then there is an issue. Scroll to the bottom of the log and use its information to diagnose the issue.
 
 ![OCI orm job complete](./images/OCI-orm_job_complete.png)
 
@@ -45,19 +45,24 @@ In order to complete the rest of the lab you will need to log into the applicati
     There will be a number of scripts and files in the opc home directory. These files are leftovers from the build. Please feel free to look at them, but please **do not attempt to run any of them** as they will most likely destroy what has been built.
     
 ### A quick tour of your Wordpress restaurant site
-As a customer you can reach the restaurant site by entering http://public-ip-address. The image below shows the home page:
+As a customer you can reach the restaurant site by entering ht<span>tp://</span>public-ip-address. The image below shows the home page:
+
 ![WP homepage](./images/WP_homepage.png)
 
 If you scroll down the page you will see a (very unintersting) post. If you scroll up you can create an order by clicking on the **Order Online** link. Create an order for delivery that contains a few items, and then go to the checkout. Checkout as a guest - see below for a typical entry. Scroll down the screen and set the Payment Method to be Test Payment. Click on the Place Order button.
+
 ![WP checkout](./images/WP_checkout.png)
 
-Once you have placed the order you should see an Order Confirmation screen. This is what the customer sees. As the owner/adminstrator of the site you will have to process the order. To do this you need to log in as the Wordpress administrator. You can achieve this by entering http://public-ip-address/wp-admin and then entering the requested credentials. For example:
+Once you have placed the order you should see an Order Confirmation screen. This is what the customer sees. As the owner/adminstrator of the site you will have to process the order. To do this you need to log in as the Wordpress administrator. You can achieve this by entering ht<span>tp://</span>public-ip-address/wp-admin and then entering the requested credentials. For example:
+
 ![WP wp wp admin](./images/WP_wp_admin.png)
 
 Once you have logged in you will arrive at the admin dashboard. 
+
 ![WP wp admin dashboard](./images/WP_admin_dashboard.png)
 
 Click on RestroPress and change the order status to Completed for the order you made as a customer.
+
 ![WP wp admin complete](./images/WP_complete_order.png)
 
 If you have time click on Food Items and explore its options.
