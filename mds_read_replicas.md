@@ -4,7 +4,7 @@
 
 ## Scale your service with Read Replicas
 <details>
-<summary>Task 1 - Create Read Replicas</summary>
+<summary><h3>Task 1 - Create Read Replicas</h3></summary>
 
 1. Connect to OCI Dashboard
 
@@ -36,20 +36,30 @@
 
 
 <details>
-<summary>Task 2 - Install and configure ludicrousdb</summary>
+<summary><h3>Task 2 - Install and configure ludicrousdb</h3></summary>
 
 1. Connect with ssh to your wordpress server, as you did in lab 1
 
-2. Execute these commands to install ludicrusdb
+2. Execute these commands to install ludicrousdb
 
+    ``` shell
+    cd /var/www/html/wp-content/plugins
+    sudo wget https://github.com/stuttter/ludicrousdb/archive/refs/heads/master.zip
+    sudo unzip master.zip
+    sudo mv ludicrousdb-master ludicrousdb
+    sudo rm master.zip
+    sudo chown -R apache. ludicrousdb
+    sudo cp ludicrousdb/ludicrousdb/drop-ins/db.php ../db.php
+    sudo cp ludicrousdb/ludicrousdb/drop-ins/db-config.php ../../
+    ```
 
 </details>
 
 <details>
-<summary>Task 3 - Create a snippet</summary>
+<summary><h3>Task 3 - Create a snippet</h3></summary>
 </details>
 
 <details>
-<summary>Task 4 - Test read replicas</summary>
+<summary><h3>Task 4 - Test read replicas</h3></summary>
 </details>
 
