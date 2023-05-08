@@ -42,16 +42,6 @@
 
 2. Execute these commands to install ludicrusdb
 
-    ``` shell
-    cd /var/www/html/wp-content/plugins
-    sudo wget https://github.com/stuttter/ludicrousdb/archive/refs/heads/master.zip
-    sudo unzip master.zip
-    sudo mv ludicrousdb-master ludicrousdb
-    sudo rm master.zip
-    sudo chown -R apache. ludicrousdb
-    sudo cp ludicrousdb/ludicrousdb/drop-ins/db.php ../db.php
-    sudo cp ludicrousdb/ludicrousdb/drop-ins/db-config.php ../../
-    ```
 
 </details>
 
