@@ -45,23 +45,19 @@
 
 1. Please check the MySQL HeatWave Database Service instance endpoint, and note that the Private IP address of your instance doesn't change enabling or disabling the High Availability
 
-2. We can now simulate a failure, suing the "switchover" option.
+2. We can now simulate a failure, with the "switchover" option.
     From the Instance details page, open the "More actions" menu and choose
 
-    ![]()
+    ![OCI MySQL HeatWave Database Instance High Availability switchover](./images/./OCI-mds-more_actions-switchover.png)
 
 3. The wizard ask you which FD (Fault Domain) or AD (Availability Domain) to use.
-    Choose one different from the actual
+    Choose one different from the actual and confirm with "SWitchover" button. Below example is for FD.
 
-    ![]()
+    ![OCI MySQL HeatWave Database Instance High Availability switchover choose new FD](./images/./OCI-mds-more_actions-switchover-choose_fd.png)
 
-4. Even if the instance is in "UPDATE" (orange) status, it's still online. The downtime is limited to the seconds required to complete the switchover. Wait that the instance return to "ACTIVE" (green) status
-
-    ![]()
+4. Even if the instance is in "UPDATE" (orange) status, it's still online. The downtime is limited to the seconds required to complete the switchover. Wait that the instance return to "ACTIVE" (green) status. The status change requires few minutes.
 
 5. Return to your "My Restaurant" web site and navigate. YOu can see that the web site is still working perfectly
-
-    ![]()
 
 </details>
 
