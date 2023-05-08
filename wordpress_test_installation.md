@@ -14,7 +14,7 @@ In this lab we
 ## Test Wordpress Installation
 
 <details>
-<summary> ###Task 1 - Check job execution and retrieve private SSH key to access Wordpress server### </summary>
+<summary>Task 1 - Check job execution and retrieve private SSH key to access Wordpress server</summary>
 
 1. If you are logged out from OCI, re-login with your account.
 
