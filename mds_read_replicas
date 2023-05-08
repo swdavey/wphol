@@ -42,7 +42,7 @@
 
 2. Execute these commands to install ludicrusdb
 
-    ``` bash
+    ``` shell
     cd /var/www/html/wp-content/plugins
     sudo wget https://github.com/stuttter/ludicrousdb/archive/refs/heads/master.zip
     sudo unzip master.zip
