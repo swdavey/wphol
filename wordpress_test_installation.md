@@ -55,6 +55,10 @@ In this lab we
 
 7. If you are using a client with a proprietary key format (e.g. PuTTY), ***we leave to you the conversion of the key accordingly to your tool*** (e.g. PuTTYgen for PuTTY)
 
+8. Test login?
+
+    ![todo](./images/./todo.png)
+    
 </details>
 
 <details>
