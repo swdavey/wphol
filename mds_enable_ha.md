@@ -8,7 +8,7 @@ When a system go live in production, it's important to prevent downtimes. Wordpr
 ## Improve the Business Continuity: enable the MySQL HeatWave Database Instance High Availability
 
 <details>
-<summary><h3>Task 1 - Enable High Availability</h3</summary>
+<summary><h3>Task 1 - Enable High Availability</h3></summary>
 
 1. Go to the OCI Dashboard
 
