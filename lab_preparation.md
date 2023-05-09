@@ -3,6 +3,10 @@
 **[Workshop summary](./workshop_instructions.md)**
 
 ## Introduction
+This workshop focus on how to effectively use MySQL HeatWave Database Service with Wordpress.
+So, we start with a basic installation that include a Wordpress preinstalled server connected to a MySQL Heatwave Database Instance.  
+To automatically create the first environment we use the OCI Resource Manager to execute a terraform script.  
+It requires 15/20 minutes to finish.
 
 ## Lab preparation
 Deploy Wordpress on Oracle Cloud Intrastructure (OCI) and MySQL Database Service (MDS) using Terraform modules.

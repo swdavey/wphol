@@ -2,11 +2,11 @@
 
 **[Previous lab](./wordpress_test_installation.md)**
 
+## Improve the Business Continuity: enable the MySQL HeatWave Database Instance High Availability
+
 ## Introduction
 When a system go live in production, it's important to prevent downtimes. Wordpress has its own ways to configure High Availability, we see here how to enable HA for MySQL.
  
-## Improve the Business Continuity: enable the MySQL HeatWave Database Instance High Availability
-
 <details>
 <summary><h3>Task 1 - Enable High Availability</h3></summary>
 
