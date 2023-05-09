@@ -60,9 +60,9 @@ In order to complete the rest of the lab you will need to log into the applicati
 1. To perform this task you will need the following information:
     1. The administrative user of the database. Unless you have changed it this will be by default **admin**
     
-    2. The password for the administrative user. Unless you have changed it this will be the same as the password for the wordpress db user which is detailed in the Outputs section of the ORM Job page (see iv below for navigation details of how to get to Outputs).
+    2. The password for the administrative user. Unless you have changed it this will be the same as the password for the wordpress db user which is detailed in the Outputs section of the ORM Job page (see **iv** below for how to navigate to Outputs).
     
-    3. The name of the wordpress schema. Unless you have changed it, this will be **wordpress**. If you have changed the schema name and cannot remember it, then it can be found in the Outputs section of the ORM Job page (see (iv) below for navigation details of how to get to Outputs).
+    3. The name of the wordpress schema. Unless you have changed it, this will be **wordpress**. If you have changed the schema name and cannot remember it, then it can be found in the Outputs section of the ORM Job page (see **iv** below for how to navigate to Outputs).
     
     4. The private IP address of the database server. To obtain the private IP address of the database server. In the OCI console this can be found by
         - **Either** going to the ORM job page: 
