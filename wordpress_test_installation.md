@@ -1,19 +1,24 @@
 # oci-wordpress-mds
 
 ## Introduction
-In this lab you will test and get to know your Wordpress installation. This lab can only be started once the 
+In this lab you will test and get to know your Wordpress installation. This lab can only be started once the previous one is finished.
+
 ## Test Wordpress Installation
-### Confirm the ORM job (which builds the infrastructure and site) has run successfully
-This job typically takes 15-20 minutes so please be patient. When the job completes the RMJ icon in the top left of the ORM page will turn from orange (updating) to green and will state that the job has succeeded (see below). If it turns red then there is an issue. Scroll to the bottom of the log and use its information to diagnose the issue.
+<details>
+<summary><h3>Confirm the ORM job (which builds the infrastructure and site) has run successfully</h3></summary>
 
-![OCI orm job complete](./images/OCI-orm_job_complete.png)
+1. This job typically takes 15-20 minutes so please be patient. When the job completes the RMJ icon in the top left of the ORM page will turn from orange (updating) to green and will state that the job has succeeded (see below). If it turns red then there is an issue. Scroll to the bottom of the log and use its information to diagnose the issue.
 
-### Obtaining information about the installation
-Information such as the public IP address of the Wordpress application server can be obtained by accessing the links under the Resources menu (which can be found on left hand side of the ORM RMJ page (see above).
+    ![OCI orm job complete](./images/OCI-orm_job_complete.png)
 
-Click on the **Outputs** menu item. Here you will see values for: the database's private IP addrees; the Wordpress database user's name; the Wordpress database user's password, and the public IP address of the Wordpress application server. Note that unless you changed the passwords as part of the installation, then all other passwords will have the same value as the Wordpress user's password. This is not best practice in production and has only been done here to keep things simple for the lab.
+2. Obtaining information about the installation
+    Information such as the public IP address of the Wordpress application server can be obtained by accessing the links under the Resources menu (which can be found on left hand side of the ORM RMJ page (see above).
 
-Click on the **Job resources** menu item. Here you will see in detail all the resources that went into the making of the infrastructure and Wordpress site.
+    1. Click on the **Outputs** menu item. Here you will see values for: the database's private IP addrees; the Wordpress database user's name; the Wordpress database user's password, and the public IP address of the Wordpress application server. Note that unless you changed the passwords as part of the installation, then all other passwords will have the same value as the Wordpress user's password. This is not best practice in production and has only been done here to keep things simple for the lab.
+
+    2. Click on the **Job resources** menu item. Here you will see in detail all the resources that went into the making of the infrastructure and Wordpress site.
+
+</details>
 
 ### Log into your Wordpress application server
 In order to complete the rest of the lab you will need to log into the application server. This requires you to know the public IP address of the server and user credentials. The user credentials are formed of a username and a private key. To get this information perform the following steps:
