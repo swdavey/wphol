@@ -1,5 +1,7 @@
 # oci-wordpress-mds
 
+**[Previous lab](./mds_read_replicas.md)**
+
 ## Introduction
 
 ## Improve the Business Continuity: enable point in time recovery
@@ -21,3 +23,8 @@ To enable PITR please follow these four steps:
 The process to enable PITR will take a few minutes so please be patient.
 
 </details>
+
+
+### This end our workshop.
+Please remember that tenancy costs are calculated on running instances and space used.
+Shutdown the instances when you don't need them or use the stack to easily destroy what we did in this workshop. 
