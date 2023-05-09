@@ -1,8 +1,14 @@
 # oci-wordpress-mds
 
+**[Previous lab](./mds_enable_ha.md)**
+
 ## Introduction
+Now our web site is redundant, but we have too many accesses. For this reason we add a plugin to automatically split wordpress read/writes using MySQL replicas.  
+MySQL HeatWave Database Service offer an easy way to create read replicas, that accessible through an automatically created Load Balancer.  
+To test, we install and configure a Wordpress snippet to show the MySQL server where we are connected.  
 
 ## Scale your service with Read Replicas
+
 <details>
 <summary><h3>Task 1 - Create Read Replicas</h3></summary>
 
@@ -167,3 +173,4 @@
 
 </details>
 
+**[Next lab](./mds_enable_pitr.md)**

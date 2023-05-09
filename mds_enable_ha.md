@@ -1,11 +1,14 @@
 # oci-wordpress-mds
 
-## Introduction
+**[Previous lab](./wordpress_test_installation.md)**
 
+## Introduction
+When a system go live in production, it's important to prevent downtimes. Wordpress has its own ways to configure High Availability, we see here how to enable HA for MySQL.
+ 
 ## Improve the Business Continuity: enable the MySQL HeatWave Database Instance High Availability
 
 <details>
-<summary>Task 1 - Enable High Availability  </summary>
+<summary><h3>Task 1 - Enable High Availability</h3</summary>
 
 1. Go to the OCI Dashboard
 
@@ -41,7 +44,7 @@
 </details>
 
 <details>
-<summary>Task 2 - Test High Availability  </summary>
+<summary><h3>Task 2 - Test High Availability</h3></summary>
 
 1. Please check the MySQL HeatWave Database Service instance endpoint, and note that the Private IP address of your instance doesn't change enabling or disabling the High Availability
 
@@ -61,3 +64,4 @@
 
 </details>
 
+**[Next lab](./mds_read_replicas.md)**

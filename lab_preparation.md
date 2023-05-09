@@ -1,6 +1,10 @@
 # oci-wordpress-mds
 
+**[Workshop summary](./workshop_instructions.md)**
+
 ## Introduction
+**[Workshop summary](./workshop_instructions.md)**
+
 
 ## Lab preparation
 Deploy Wordpress on Oracle Cloud Intrastructure (OCI) and MySQL Database Service (MDS) using Terraform modules.
