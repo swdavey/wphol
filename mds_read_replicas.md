@@ -2,12 +2,12 @@
 
 **[Previous lab](./mds_enable_ha.md)**
 
+## Scale your service with Read Replicas
+
 ## Introduction
 Now our web site is redundant, but we have too many accesses. For this reason we add a plugin to automatically split wordpress read/writes using MySQL replicas.  
 MySQL HeatWave Database Service offer an easy way to create read replicas, that accessible through an automatically created Load Balancer.  
 To test, we install and configure a Wordpress snippet to show the MySQL server where we are connected.  
-
-## Scale your service with Read Replicas
 
 <details>
 <summary><h3>Task 1 - Create Read Replicas</h3></summary>
@@ -166,10 +166,6 @@ To test, we install and configure a Wordpress snippet to show the MySQL server w
     Refresh the page multiple times to see that the host changes periodically
 
     ![Sample page](./images/WP-sample_page.png)
-
-3. This end our workshop.  
-    Please remember that tenancy costs are calcualted on running instances and space used.
-    Shutdown the instances when you don't need them or use the stack to easily destroy what we did in this workshop. 
 
 </details>
 
