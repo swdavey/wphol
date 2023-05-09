@@ -1,7 +1,8 @@
 # oci-wordpress-mds
 
 ## Introduction
-In this lab you will test and get to know your Wordpress installation. This lab can only be started once the 
+In this lab you will test and get to know your Wordpress installation. This lab can only be started once the previous one is finished.
+
 ## Test Wordpress Installation
 <details>
 <summary><h3>Confirm the ORM job (which builds the infrastructure and site) has run successfully</h3></summary>
