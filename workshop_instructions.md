@@ -5,14 +5,14 @@ On one hand, MySQL is the world’s most popular open-source database. On the ot
 
 In this hands-on workshop, you will learn:
 
-More about MySQL HeatWave
+More about MySQL HeatWave:
 - Enabling MySQL HeatWave on Oracle Cloud
 - Deploying a new website with WordPress and MySQL
 - Growing from a small development environment to a full production architecture
 - Scale your environment for any future load
 - Making your architecture highly available
 
-An Oracle Cloud account is required and enough privileges to 
+An Oracle Cloud account is required and enough privileges to: 
 - execute stacks
 - create and manage network configurations
 - create and manage compute machines

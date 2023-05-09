@@ -6,7 +6,7 @@ In this lab you will test and get to know your Wordpress installation. This lab 
 
 ## Test Wordpress Installation
 <details>
-<summary><h3>Confirm the ORM job (which builds the infrastructure and site) has run successfully</h3></summary>
+<summary>Task 1 - Confirm the ORM job has run successfully</summary>
 
 1. This job typically takes 15-20 minutes so please be patient. When the job completes the RMJ icon in the top left of the ORM page will turn from orange (updating) to green and will state that the job has succeeded (see below). If it turns red then there is an issue. Scroll to the bottom of the log and use its information to diagnose the issue.
 
@@ -22,7 +22,7 @@ In this lab you will test and get to know your Wordpress installation. This lab 
 </details>
 
 <details>
-<summary><h3>Log into your Wordpress application server</h3></summary>
+<summary>Task 2 - Log into your Wordpress application server</summary>
 
 In order to complete the rest of the lab you will need to log into the application server. This requires you to know the public IP address of the server and user credentials. The user credentials are formed of a username and a private key. To get this information perform the following steps:
 
@@ -55,7 +55,12 @@ In order to complete the rest of the lab you will need to log into the applicati
 </details>
 
 <details>
-<summary><h3>A quick tour of your Wordpress restaurant site</h3></summary>
+<summary>Task 3 - Connect to the Database and Explore the schema</summary>
+Blah
+</details>
+
+<details>
+<summary>Task 4 - A quick tour of your Wordpress restaurant site</summary>
 
 1. As a customer you can reach the restaurant site by entering ht<span>tp://</span>public-ip-address. The image below shows the home page:
 

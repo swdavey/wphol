@@ -20,11 +20,11 @@ When a system go live in production, it's important to prevent downtimes. Wordpr
 
     ![OCI MySQL HeatWave Database Service instances list](./images/./OCI-mds-instances-list.png)
 
-4. To enable HA click on your database instance's name and then in its details page click on the More Actions menu and select the "Enable High Availability" option.
+4. To enable HA, click on your database instance's name and then in its details page (below) click on the "More Actions" button menu and select the "Enable High Availability" option.
 
-    ![OCI MySQL HeatWave Database Service instance details](./images/./OCI-mds-instance_details.png)
+    ![OCI MySQL HeatWave Database Service instance details](./images/./OCI-mds-instance-HA_action.png)
 
-5. Confirm the activation clicking on "Enable"
+5. Confirm the activation by clicking on "Enable"
 
     ![OCI MySQL HeatWave Database Service instance enable HA confirmation](./images/./OCI-mds-enable_HA.png)
 
