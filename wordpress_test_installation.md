@@ -1,5 +1,6 @@
 # oci-wordpress-mds
 
+**[Previous lab](./lab_preparation.md)**
 ## Introduction
 In this lab you will test and get to know your Wordpress installation. This lab can only be started once the previous one is finished.
 
@@ -20,7 +21,9 @@ In this lab you will test and get to know your Wordpress installation. This lab 
 
 </details>
 
-### Log into your Wordpress application server
+<details>
+<summary><h3>Log into your Wordpress application server</h3></summary>
+
 In order to complete the rest of the lab you will need to log into the application server. This requires you to know the public IP address of the server and user credentials. The user credentials are formed of a username and a private key. To get this information perform the following steps:
 
 1. The user name is **opc**. This user is part of the sudoers group on the application server meaning it can elevate its privileges to that of root by using the sudo command.
@@ -48,29 +51,34 @@ In order to complete the rest of the lab you will need to log into the applicati
     7. You should now be able to log into your application server, using ssh -i path-to-private-key opc@public-ip. An example is shown below (where the public IP address of the application server is 150.230.122.56). Be aware that the first time you log in you will be requested to confirm the authenticity of the host, to which you must answer **yes**. 
     ![APP first login](./images/APP_first_login.png)
     There will be a number of scripts and files in the opc home directory. These files are leftovers from the build. Please feel free to look at them, but please **do not attempt to run any of them** as they will most likely destroy what has been built.
-    
-### A quick tour of your Wordpress restaurant site
-As a customer you can reach the restaurant site by entering ht<span>tp://</span>public-ip-address. The image below shows the home page:
 
-![WP homepage](./images/WP_homepage.png)
+</details>
 
-If you scroll down the page you will see a (very unintersting) post. If you scroll up you can create an order by clicking on the **Order Online** link. Create an order for delivery that contains a few items, and then go to the checkout. Checkout as a guest - see below for a typical entry. Scroll down the screen and set the Payment Method to be Test Payment. Click on the Place Order button.
+<details>
+<summary><h3>A quick tour of your Wordpress restaurant site</h3></summary>
 
-![WP checkout](./images/WP_checkout.png)
+1. As a customer you can reach the restaurant site by entering ht<span>tp://</span>public-ip-address. The image below shows the home page:
 
-Once you have placed the order you should see an Order Confirmation screen. This is what the customer sees. As the owner/adminstrator of the site you will have to process the order. To do this you need to log in as the Wordpress administrator. You can achieve this by entering ht<span>tp://</span>public-ip-address/wp-admin and then entering the requested credentials. For example:
+    ![WP homepage](./images/WP_homepage.png)
 
-![WP wp wp admin](./images/WP_wp_admin.png)
+2. If you scroll down the page you will see a (very unintersting) post. If you scroll up you can create an order by clicking on the **Order Online** link. Create an order for delivery that contains a few items, and then go to the checkout. Checkout as a guest - see below for a typical entry. Scroll down the screen and set the Payment Method to be Test Payment. Click on the Place Order button.
 
-Once you have logged in you will arrive at the admin dashboard. 
+    ![WP checkout](./images/WP_checkout.png)
 
-![WP wp admin dashboard](./images/WP_admin_dashboard.png)
+3. Once you have placed the order you should see an Order Confirmation screen. This is what the customer sees. As the owner/adminstrator of the site you will have to process the order. To do this you need to log in as the Wordpress administrator. You can achieve this by entering ht<span>tp://</span>public-ip-address/wp-admin and then entering the requested credentials. For example:
 
-Click on RestroPress and change the order status to Completed for the order you made as a customer.
+    ![WP wp wp admin](./images/WP_wp_admin.png)
 
-![WP wp admin complete](./images/WP_complete_order.png)
+4. Once you have logged in you will arrive at the admin dashboard. 
 
-If you have time click on Food Items and explore its options.
+    ![WP wp admin dashboard](./images/WP_admin_dashboard.png)
 
+5. Click on RestroPress and change the order status to Completed for the order you made as a customer.
 
+    ![WP wp admin complete](./images/WP_complete_order.png)
 
+6. If you have time click on Food Items and explore its options.
+
+</details>
+
+**[Next lab](./mds_enable_ha.md)**
