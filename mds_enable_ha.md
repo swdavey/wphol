@@ -11,7 +11,7 @@
 
 2. Navigate to MySQL HeatWave database instances
 
-    [OCI Burger menu for MySQL HeatWave Database instances](./images/./OCI-burger_menu-databases-db_system.png)
+    ![OCI Burger menu for MySQL HeatWave Database instances](./images/./OCI-burger_menu-databases-db_system.png)
 
 3. Click now on your instance name "MySQLInstance" to see the details.
 
