@@ -3,3 +3,15 @@
 ## Introduction
 
 ## Improve the Business Continuity: enable point in time recovery
+<details>
+<summary><h3>Task 1 - Enable PITR</h3></summary>
+1. In the OCI console navigate to your database instance as before (i.e. from the Hamburger menu, select Databases, then under MySQL select DB Systems. If you cannot see your database then check that you are in the correct compartment).
+
+2. Click on your database instance's name in order to get to its details page.
+
+3. Click on the "More Actions" menu button, and from the drop down list select Edit backup plan.
+
+4. In the dialog check the box whose label is "Enable point-in-ime recovery". Click on the "Save Changes" button.
+
+
+</details>
