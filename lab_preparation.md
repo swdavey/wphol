@@ -1,5 +1,7 @@
 # oci-wordpress-mds
 
+**[Workshop summary](./workshop_instructions.md)**
+
 ## Introduction
 
 ## Lab preparation
