@@ -21,19 +21,19 @@
 
     ![OCI MySQL HeatWave Database Service instance details](./images/./OCI-mds-instance_details.png)
 
-4. Confirm the activation clicking on "Enable"
+5. Confirm the activation clicking on "Enable"
 
     ![OCI MySQL HeatWave Database Service instance enable HA confirmation](./images/./OCI-mds-enable_HA.png)
 
-5. By default, standalone and High Availability instances have different configuration settings. Choose the configuration "MySQL.VM.Standard.E4.4.64GB.HA" and press "Enable"
+6. By default, standalone and High Availability instances have different configuration settings. Choose the configuration "MySQL.VM.Standard.E4.4.64GB.HA" and press "Enable"
 
     ![OCI MySQL HeatWave Database Service instance choose HA configuration](./images/./OCI-mds-enable_HA-Choose_configuration.png)
 
-6. It requires some minutes to enable the HA, so wait until the end of the activity
+7. It requires some minutes to enable the HA, so wait until the end of the activity
 
     ![OCI MySQL HeatWave Database Service instance enabling HA wait message](./images/OCI-mds-enable_HA-wait.png)
 
-7. While a change is in progress, you can navigate instance details, but you are not allowed to make changes.
+8. While a change is in progress, you can navigate instance details, but you are not allowed to make changes.
     We can see it from the "UPDATING" (orange) status.
 
     ![OCI MySQL HeatWave Database Service instance enabling HA update status](./images/./OCI-mds-enable_HA-update_status.png)
@@ -41,7 +41,7 @@
 </details>
 
 <details>
-<summary>Task 1 - Test High Availability  </summary>
+<summary>Task 2 - Test High Availability  </summary>
 
 1. Please check the MySQL HeatWave Database Service instance endpoint, and note that the Private IP address of your instance doesn't change enabling or disabling the High Availability
 
