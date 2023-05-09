@@ -19,7 +19,7 @@
 
 4. To enable HA click on your database instance's name and then in its details page click on the More Actions menu and select the "Enable High Availability" option.
 
-    ![OCI MySQL HeatWave Database Service instance details](./images/./OCI-mds-instance_details.png)
+    ![OCI MySQL HeatWave Database Service instance details](./images/./OCI-mds-instance-HA_action.png)
 
 5. Confirm the activation clicking on "Enable"
 
