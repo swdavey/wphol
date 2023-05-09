@@ -64,25 +64,27 @@ In order to complete the rest of the lab you will need to log into the applicati
     
     3. The name of the wordpress schema. Unless you have changed it, this will be **wordpress**. If you have changed the schema name and cannot remember it, then it can be found in the Outputs section of the ORM Job page (see **iv** below for how to navigate to Outputs).
     
-    4. The private IP address of the database server. To obtain the private IP address of the database server. In the OCI console this can be found by
-        - **Either** going to the ORM job page: 
-            - If you are not already on the ORM jobs page navigate to it by clicking on the Hamburger Menu, select **Developer Services** and then under **Resource Manager** click on the **Jobs** link. Once in the Jobs list page click on the **ormjob** link. In the Job page click on **Outputs** and then copy the mds_instance_ip value. 
-        - **Or** going to the database instance's page: 
+    4. The private IP address of the database server. If you do not have this to hand then you can find it in the OCI console by
+        - **Either** going to **Outputs** in the ORM Job page: 
+            
+            - If you are not already on the ORM job page navigate to it by clicking on the Hamburger Menu, select **Developer Services** and then under **Resource Manager** click on the **Jobs** link. Once in the Jobs list page click on the **ormjob** link to go to the ORM Job page. In the Job page click on **Outputs** and then copy the mds_instance_ip value. 
+        
+       - **Or** going to the database instance's page: 
             - Click on the Hamburger Menu and select **Databases** (do not select Oracle Database). Click on **DB Systems** (under MySQL). In the DB Systems list page click on your database's name ("MySQLInstance" unless you changed the name). In the instance's page scroll down and on the right hand side you will see a section called Endpoint and within it will be the private IP address.
     
 2. If you have logged out of the application server, then re-login (see step 7 of the previous task)
     
 3. Connect to the database using MySQL Shell. Use the following connection string: mysqlsh --uri admin@private-ip-address --sql and then supplying the password at the prompt. For example: 
-
-![database login](./images/WP-db-login.png)
+    
+    ![database login](./images/WP-db-login.png)
     
 4. Once connected, use the wordpress schema (or whatever name you gave the wordpress schema) and look at its structure. Do not make any changes. For example:
-
-![database login](./images/WP-db-schema.png)
-
-5. Quit from the database and then take a tour of your new restaurant (task 4).
     
-![database logout](./images/WP-db-logout.png)
+    ![database login](./images/WP-db-schema.png)
+
+5. Quit from the database (using **\q**) and then continue with Task 4.
+    
+    ![database logout](./images/WP-db-logout.png)
     
 </details>
 
@@ -107,7 +109,7 @@ In order to complete the rest of the lab you will need to log into the applicati
 
 5. Click on RestroPress and change the order status to Completed for the order you made as a customer.
 
-    ![WP wp admin complete](./images/WP_complete_order.png)
+   ![WP wp admin complete](./images/WP_complete_order.png)
 
 6. If you have time click on Food Items and explore its options.
 
