@@ -8,7 +8,7 @@
 
 1. Connect to OCI Dashboard
 
-2. Navigate to MySQL HeatWave database instances
+2. Navigate to MySQL HeatWave database instances page
 
     [OCI Burger menu for MySQL HeatWave Database instances](./images/./OCI-burger_menu-databases-db_system.png)
 
