@@ -57,7 +57,7 @@
 4. Retrieve MySQL load balancer Endpoint for read replicas.  
     Return to OCI Dashboard and go to MySQL HeatWave database instances
 
-    [OCI Burger menu for MySQL HeatWave Database instances](./images/./OCI-burger_menu-databases-db_system.png)
+    ![OCI Burger menu for MySQL HeatWave Database instances](./images/./OCI-burger_menu-databases-db_system.png)
 
 5. Click now on your instance name "MySQLInstance" to see the details.
 
