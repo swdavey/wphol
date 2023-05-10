@@ -119,11 +119,11 @@ In order to test our read-replicas we need to create a snippet
     ![Wordpress WPCcode plugin activation](../images/WP-plugins-snippets-wpcode-activate.png)
 
 6. A new menu option called "Code Snippets" will now be visible in the left side menu (you may have to scroll down to see it).  
-    Click on "Code Snippets"
+    Click on "Code Snippets".
 
     ![Wordpress WPCOde snippet menu](../images/WP-plugins-wpcode_menu.png)
 
-7. Click on "+ Add Snippet" in the left-hand menu and then hover your mouse over "Add Your Custom Code (New Snippet)" option. This will cause a new button, "Use snippet" to be displayed. Click on it.
+7. Click on **either** the "Add New" button in the main page **or** the "+ Add Snippet" menu item in the left-hand menu. Move your mouse over "Add Your Custom Code (New Snippet)" option. This will cause a new blue button to be displayed called "Use snippet". Click on it.
 
     ![Wordpress WPCode add new snippet](../images/WP-plugins-wpcode-add_new.png)
 
