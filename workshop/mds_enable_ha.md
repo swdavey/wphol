@@ -2,7 +2,7 @@
 
 **[Previous lab](./wordpress_test_installation.md)**
 
-## Improve Business Continuity: enable MySQL HeatWave Database Instance High Availability
+## Lab 3 - Improve Business Continuity: enable MySQL HeatWave Database Instance High Availability
 
 ## Introduction
 When systems go into production there are usually requirements for uptime (e.g. 99.99% means less than 1 hour of downtime per year) and to automatically recover from node crashes (e.g. automatic failover). In this lab you learn how to configure the MySQL Database Service in order to meet such requirements.
