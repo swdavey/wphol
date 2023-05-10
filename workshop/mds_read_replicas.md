@@ -118,17 +118,17 @@ In order to test our read-replicas we need to create a snippet
 
     ![Wordpress WPCcode plugin activation](../images/WP-plugins-snippets-wpcode-activate.png)
 
-6. A new menu option called "Code snippets" will now be visible in the left side menu.  
-    Click on "Code snippets"
+6. A new menu option called "Code Snippets" will now be visible in the left side menu.  
+    Click on "Code Snippets"
 
     ![Wordpress WPCOde snippet menu](../images/WP-plugins-wpcode_menu.png)
 
-7. Choose "+ Add snippet" and select "Add Your Custom Code (New Snippet)". Move your mouse over this option. This will cause a new button, "Use snippet" to be displayed. Click on it.
+7. Click on "+ Add Snippet" in the left-hand menu and then hover your mouse over "Add Your Custom Code (New Snippet)" option. This will cause a new button, "Use snippet" to be displayed. Click on it.
 
     ![Wordpress WPCode add new snippet](../images/WP-plugins-wpcode-add_new.png)
 
-8. Now insert snippet settings
-    1. Add a title to our snippet: "read replicas check"
+8. In the Edit Snippet page (see image below):
+    1. Enter the title of your snippet, use: "read replicas check"
     2. Select "Code Type": PHP
     3. insert this code in "Code Preview"
         ``` php
@@ -144,9 +144,9 @@ In order to test our read-replicas we need to create a snippet
 
     ![Wordpress snippet settings](../images/WP-plugins-wpcode-snippet_conf1.png)
 
-9. Keep the default "Insert before paragraph 1" and at the top of the page 
-    1. Click Inactive switch to activate (the switch should turn blue)
-    2. Click "Update" to save your changes
+9. Scroll down to the Insertion section. Keep the defaults as they are: location should read "Insert before paragraph" and paragraph number should be "1" 
+    1. Click Inactive switch to activate (the name won't change but the background of the switch should turn blue)
+    2. Click on the button in the top left of the screen next to the "Inactive" switch. If this is your first pass it will have a "Save" label, if this a subsequent pass (due to an ealier mistake) it will have an "Update" label.
 
     ![Wordpress snippet save](../images/WP-plugins-wpcode-snippet_conf2.png)
 
