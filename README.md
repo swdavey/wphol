@@ -4,7 +4,7 @@ At the click of a button deploy a Wordpress site on Oracle Cloud Infrasture. The
 
 The install forms the first part of a workshop that will develop the initial site from being standalone to highly available, and will then demonstrate how to further scale for read performance. 
 
-To access the workshop either click [here](./workshop/workshop_instructions.md).
+To access the workshop click [here](./workshop/workshop_instructions.md).
 
 To start the install process click on the button below.
 
