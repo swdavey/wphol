@@ -3,23 +3,22 @@
 **[Workshop summary](./workshop_instructions.md)**
 
 ## Introduction
-This workshop focus on how to effectively use MySQL HeatWave Database Service with Wordpress.
-So, we start with a basic installation that include a Wordpress preinstalled server connected to a MySQL Heatwave Database Instance.  
-To automatically create the first environment we use the OCI Resource Manager to execute a terraform script.  
-It requires 15/20 minutes to finish.
+This workshop focusses on how to effectively use the MySQL HeatWave Database Service with Wordpress.
+You will start by creating a simple development environment that will be built using the OCI Resource Manager and the terraform scripts deployed in this GitHub repository.
+This lab takes 15-20 minutes to complete.
 
 ## Lab preparation
 Deploy Wordpress on Oracle Cloud Intrastructure (OCI) and MySQL Database Service (MDS) using Terraform modules.
 
-1. Click on the button below to start the stack
+1. If you haven't already clicked on the Deploy to Oracle Cloud button the please click on it now.
 
-[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v3.0/stack_wordpress_mds.zip)
+[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v4.0/stack_wordpress_mds.zip)
 
 2. You will automatically be directed to your OCI login page.
 Enter your tenancy name and click next
-![OCI tenancy login page](./images/OCI_login-tenancy.png)
+![OCO login tenancy](../images/OCI_login-tenancy.png)
 Choose **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username and password
-![OCI username login page](./images/OCI_login-username_and_password.png)
+![OCI username login page](../images/OCI_login-username_and_password.png)
 
 3. Upon log-in you will automatically be directed to an OCI Resource Manager **Create Stack** page. This has been pre-populated with fields that will prompt you for the information necessary to build the basic infrastructure and Wordpress site for this hands-on-lab. You will need to enter the following information:
  
@@ -28,7 +27,7 @@ Choose **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username
     3. Choose the compartment where to create the lab resources.
     4. Click next.
     
-    ![OCI create stack first page: information](./images/OCI-create_stack_page1.png)
+    ![OCI create stack first page: information](../images/OCI-create_stack_page1.png)
 
 4. On the second page you will have further fields to complete. Please read all these notes before completing this page.
 
@@ -45,10 +44,10 @@ Choose **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username
       2. Enter the **Email address of the Wordpress administrator**: insert your email address (e.g. fred@bedrock.com)
       3. Click on the Next button
     
-    ![OCI create stack second page: mandatory variables](./images/OCI-create_stack_page2.png)
+    ![OCI create stack second page: mandatory variables](../images/OCI-create_stack_page2.png)
 
 5. On the third page verify that the checkbox **"Run apply"** is selected and then press **Create**
-    ![OCI create stack third page: confirm and create](./images/OCI-create_stack_page2.png)
+    ![OCI create stack third page: confirm and create](../images/OCI-create_stack_page2.png)
 
 6. The job will start and after few seconds you can see the logs.
     It will take 15-20 minutes to complete.

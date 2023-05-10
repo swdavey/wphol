@@ -1,7 +1,7 @@
 # oci-wordpress-mds
 
 ## Introduction
-On one hand, MySQL is the world’s most popular open-source database. On the other, WordPress is the leading content management system. This step by step workshop will combine both technologies and will show and guide participants on running WordPress with MySQL HeatWave.
+MySQL is the world’s most popular open-source database. WordPress is the leading content management system. This step by step workshop will combine both technologies and will show and guide participants on running WordPress with MySQL HeatWave.
 
 In this hands-on workshop, you will learn:
 
@@ -9,15 +9,15 @@ More about MySQL HeatWave:
 - Enabling MySQL HeatWave on Oracle Cloud
 - Deploying a new website with WordPress and MySQL
 - Growing from a small development environment to a full production architecture
-- Scale your environment for any future load
 - Making your architecture highly available
+- Scaling your environment for high read loads
 
 An Oracle Cloud account is required and enough privileges to: 
-- execute stacks
-- create and manage network configurations
-- create and manage compute machines
-- create and manage MySQL HeatWave Database Instances
-We recommend to use an administrative account and a dedicated compartment.
+- Execute stacks
+- Create and manage network configurations
+- Create and manage compute machines
+- Create and manage MySQL HeatWave Database Instances
+We recommend you use an administrative account with a dedicated compartment.
 
 If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial account with FREE 300 USD credits [here](https://www.oracle.com/cloud/free/).
 
@@ -26,15 +26,15 @@ If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial a
 1. Create your starting environment  
 [click here](./lab_preparation.md)
 
-2. Test your wordpress installation  
+2. Test your Wordpress installation  
 [click here](./wordpress_test_installation.md)
 
-3. Improve the Business Continuity: enable the MySQL HeatWave Database Instance High Availability  
+3. Improve Business Continuity: enable the MySQL HeatWave Database Instance High Availability  
 [click here](./mds_enable_ha.md)
 
 4. Scale your service with Read Replicas  
-[click here](./mds_read_replicas)
+[click here](./mds_read_replicas.md)
 
-5. Improve the Business Continuity: enable point in time recovery  
+5. Improve Business Continuity: enable point in time recovery  
 [click here](./mds_enable_pitr.md)
 
