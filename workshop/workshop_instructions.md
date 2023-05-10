@@ -33,7 +33,7 @@ If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial a
 [click here](./mds_enable_ha.md)
 
 4. Scale your service with Read Replicas  
-[click here](./mds_read_replicas)
+[click here](./mds_read_replicas.md)
 
 5. Improve Business Continuity: enable point in time recovery  
 [click here](./mds_enable_pitr.md)
