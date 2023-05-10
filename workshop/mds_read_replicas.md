@@ -129,7 +129,7 @@ In order to test our read-replicas we need to create a snippet
 
 8. In the Edit Snippet page (see image below):
     1. Enter the title of your snippet, use: "read replicas check"
-    2. Select "Code Type": PHP
+    2. Using the drop down on the right hand side of the screen change the code type from "HTML Snippet" to **"PHP Snippet"**
     3. insert this code in "Code Preview"
         ``` php
         <?php
