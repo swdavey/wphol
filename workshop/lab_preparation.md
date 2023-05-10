@@ -17,9 +17,9 @@ Deploy Wordpress on Oracle Cloud Intrastructure (OCI) and MySQL Database Service
 
 2. You will automatically be directed to your OCI login page.
 Enter your tenancy name and click next
-![OCI tenancy login page](./images/OCI_login-tenancy.png)
+![OCO login tenancy](../images/OCI_login-tenancy.png)
 Choose **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username and password
-![OCI username login page](./images/OCI_login-username_and_password.png)
+![OCI username login page](../images/OCI_login-username_and_password.png)
 
 3. Upon log-in you will automatically be directed to an OCI Resource Manager **Create Stack** page. This has been pre-populated with fields that will prompt you for the information necessary to build the basic infrastructure and Wordpress site for this hands-on-lab. You will need to enter the following information:
  
@@ -28,7 +28,7 @@ Choose **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username
     3. Choose the compartment where to create the lab resources.
     4. Click next.
     
-    ![OCI create stack first page: information](./images/OCI-create_stack_page1.png)
+    ![OCI create stack first page: information](../images/OCI-create_stack_page1.png)
 
 4. On the second page you will have further fields to complete. Please read all these notes before completing this page.
 
@@ -45,10 +45,10 @@ Choose **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username
       2. Enter the **Email address of the Wordpress administrator**: insert your email address (e.g. fred@bedrock.com)
       3. Click on the Next button
     
-    ![OCI create stack second page: mandatory variables](./images/OCI-create_stack_page2.png)
+    ![OCI create stack second page: mandatory variables](../images/OCI-create_stack_page2.png)
 
 5. On the third page verify that the checkbox **"Run apply"** is selected and then press **Create**
-    ![OCI create stack third page: confirm and create](./images/OCI-create_stack_page2.png)
+    ![OCI create stack third page: confirm and create](../images/OCI-create_stack_page2.png)
 
 6. The job will start and after few seconds you can see the logs.
     It will take 15-20 minutes to complete.
