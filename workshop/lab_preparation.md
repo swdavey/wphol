@@ -11,13 +11,9 @@ This lab takes 15-20 minutes to complete.
 Deploy Wordpress on Oracle Cloud Infrastructure (OCI) and MySQL Database Service (MDS) using Terraform modules.
 
 1. If you haven't already clicked on the Deploy to Oracle Cloud button the please click on it now.
+We suggest you to open the link in a new page to continue to read these instructions, e.g. do a CTRL+click (on Windows and Linux) or CMD+click (on MacOS) on the link.
 
-[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v4.0/stack_wordpress_mds.zip)
-
-<a href="https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v4.0/stack_wordpress_mds.zip" target="_blank" rel="noopener"><img src="https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg"></a>
-
-[![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v4.0/stack_wordpress_mds.zip){:target="_blank" rel="noopener"}
-
+    [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v4.0/stack_wordpress_mds.zip)
 
 2. You will automatically be directed to your OCI login page.
 Enter your tenancy name and click next
