@@ -315,7 +315,7 @@ variables:
       
   wp_admin_user:
     type: string
-    require: true
+    required: true
     title: Wordpress administrator's username
     description: Wordpress server administrators
     minLength: 2
@@ -331,7 +331,7 @@ variables:
 
   wp_admin_email:
     type: string
-    require: true
+    required: true
     title: Email address of the Wordpress administrator
     description: Valid email address
     pattern: "^[a-zA-Z0-9.!#$%&'*+\\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
