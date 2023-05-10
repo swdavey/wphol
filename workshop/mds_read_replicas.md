@@ -5,24 +5,24 @@
 ## Scale your service with Read Replicas
 
 ## Introduction
-Now our web site is redundant, but we have too many accesses. For this reason we add a plugin to automatically split wordpress read/writes using MySQL replicas.  
-MySQL HeatWave Database Service offer an easy way to create read replicas, that accessible through an automatically created Load Balancer.  
-To test, we install and configure a Wordpress snippet to show the MySQL server where we are connected.  
+Business is booming. We are open 24 hours a day and suffering no downtime. Hurrah! However, with our extensive menus and blog pages detailing how people can recreate our food at home the database is becomming stressed and causing our website to slow down. To overcome this we have decided to scale out the database with load-balanced read-replica instances. By doing this we will take most of the read load away from the primary database so ensuring our orders are processed properly. 
+
+To implement read replicas and make use of them we not only have to enable them in OCI but we also have to make sure Wordpress both knows about them and can make use of them. Therefore in this lab you will implement read-replicas in OCI and then perform some Wordpress admin, specifically installing and configuring Wordpress plugins that will enable the site to use the installed read-replicas. 
 
 <details>
-<summary><h3>Task 1 - Create Read Replicas</h3></summary>
+<summary><h3>Task 1 - Create the Read-Replicas</h3></summary>
 
 1. Connect to OCI Dashboard
 
-2. Navigate to MySQL HeatWave database instances page
+2. Navigate to MySQL HeatWave database instances page 
 
     ![OCI Burger menu for MySQL HeatWave Database instances](../images/./OCI-burger_menu-databases-db_system.png)
 
-3. Click now on your instance name "MySQLInstance" to see the details.
+3. Click on your HA instance's name to see the details.
 
     ![OCI MySQL HeatWave Database Service instances list](../images/./OCI-mds-instances-list.png)
 
-3. Scroll down the page to see the left side menu, then select "Read Replicas" and press button "Create read replica"
+3. Scroll down the page until you see the menu on the left-hand-side, then select "Read Replicas" and click on "Create read replica"
 
     ![OCI MySQL HeatWave Database Service instance read replicas](../images/./OCI-mds-read_replicas-empty.png)
 
@@ -30,11 +30,11 @@ To test, we install and configure a Wordpress snippet to show the MySQL server w
 
     ![OCI MySQL HeatWave Database Service create read replica 1](../images/./OCI-mds-read_replicas-create1.png)
 
-5. Click another time "Create replica" to create a second replica. Now use the name "mysqlreadreplica2" and confirm
+5. Without waiting for the first replica to complete, click on "Create replica" again in order to create a second replica. This time call the replica "mysqlreadreplica2" and then confirm.
 
     ![OCI MySQL HeatWave Database Service create read replica 2](../images/./OCI-mds-read_replicas-create2.png)
 
-6. Replica creation requires some time, so continue with next task
+6. Replica creation takes some time, so please don't wait and continue with next task
 
     ![OCI MySQL HeatWave Database Service creating replicas](../images/./OCI-mds-read_replicas-creating_replicas.png)
 
@@ -46,7 +46,7 @@ To test, we install and configure a Wordpress snippet to show the MySQL server w
 
 1. Connect with ssh to your wordpress server, as you did in lab 1
 
-2. Execute these commands to install ludicrousdb
+2. Execute these commands to install the ludicrousdb plugin
 
     ``` shell
     cd /var/www/html/wp-content/plugins
@@ -60,21 +60,20 @@ To test, we install and configure a Wordpress snippet to show the MySQL server w
 
     ```
 
-4. Retrieve MySQL load balancer Endpoint for read replicas.  
+4. Retrieve the MySQL load balancer Endpoint for read replicas.  
     Return to OCI Dashboard and go to MySQL HeatWave database instances
 
     ![OCI Burger menu for MySQL HeatWave Database instances](../images/./OCI-burger_menu-databases-db_system.png)
 
-5. Click now on your instance name "MySQLInstance" to see the details.
+5. Click on your HA instance's name "MySQLInstance" to see the details.
 
     ![OCI MySQL HeatWave Database Service instances list](../images/./OCI-mds-instances-list.png)
-    
-6. Scroll down the page, and in the left menu choose "Endpoints".   
-    You can see here the IP address of your instance for read write access **DB system primary** and for the read replicas load balancer **Read replica load balancer**. Write down thewe two IP, needed for the next step
+6. Scroll down the page, and in the menu on the left of the page choose "Endpoints".   
+    Here you will see the IP address of your instance for read write access **DB system primary** and for the read replicas load balancer **Read replica load balancer**. Write down these two IP addresses because they will be needed in the next steps
 
     ![OCI MySQL Database Service instance Endpoints](../images/./OCI-mds-read_replicas-endpoints.png)
 
-7. We just need now to configure LudicrousDB to use the Read Replica Load Balancer. With and editor (like vim or nano) edit the db-config.php configuration file
+7. We must now configure LudicrousDB to use the Read Replica Load Balancer. With an editor (like vim or nano) edit the db-config.php configuration file:
 
     ``` shell
     cd /var/www/html/
@@ -82,49 +81,49 @@ To test, we install and configure a Wordpress snippet to show the MySQL server w
 
     ```
 
-8. Scroll down the file to the database configuration section **$wpdb->add_database( array(** like in the example below
+8. Scroll down the file to the database configuration section **$wpdb->add_database( array(** see the example below
 
     ![Ludicrousdb database configuration file](../images/./ludicrousdb-db_configuration_empty.png)
 
-9. Edit the lines like in the below example, using your IP addresses retrieved in previous steps  
+9. Edit the lines shown below using the IP addresses retrieved in the earlier step  
 
     ![Ludicrousdb database configuration file](../images/./ludicrousdb-db_configuration_sample.png)
 
-10. Save your canghes and aeturn to My Restaurant web page and check that the web site is still working and there are no issues with the new plugin
+10. Save your changes and return to the Restaurant web page. Check that the web site is still working and there are no issues with the new plugin
 
 </details>
 
 <details>
-<summary><h3>Task 3 - Create a snippet</h3></summary>
+<summary><h3>Task 3 - Create a Snippet</h3></summary>
 
-1. Login to Wordpress as admin using the wp-admin page and entering the requested credentials (specified during the job creation in lab preparation lab) 
-
-    http://***public-ip-address***/wp-admin
+In order to test our read-replicas we need to create a snippet
+    
+1. Login to Wordpress as the Wordpress admin (http://***public-ip-address***/wp-admin) and enter the requested credentials
 
     ![Wordpress login](../images/WP_wp_admin.png)
 
-2. In the wordpress management page choose "Plugins" in the left side menu, then click the button "Add New"
+2. In the wordpress management page choose "Plugins" from the left-hand-side menu, then click the button "Add New"
 
     ![Wordpress plugins menu](../images/WP-plugins_menu.png)
 
-3. In the left side textbox "Keyword" write "snippets" as in teh picture below
+3. In the text box next to to the "Keyword" drop down (top right side of the page) enter "snippets" and press return (see below). This will bring up some available plugins
 
     ![Wordpress snippets plugin search](../images/WP-plugins-snippets_search.png)
 
-4. Choose "WPCode" plugin and press "Install now"
+4. Select the "WPCode" plugin and click on "Install now"
 
     ![Wordpress WPCode isntallation](../images/WP-plugins-snippets-wpcode-install.png)
 
-5. From left side menu choose Installed plugins, then press "Activate"under "WPCode Lite"
+5. From left-hand-side menu choose Installed plugins, then press "Activate"under "WPCode Lite"
 
     ![Wordpress WPCcode plugin activation](../images/WP-plugins-snippets-wpcode-activate.png)
 
-6. A new menu option is now visible in the left side menu.  
+6. A new menu option called "Code snippets" will now be visible in the left side menu.  
     Click on "Code snippets"
 
     ![Wordpress WPCOde snippet menu](../images/WP-plugins-wpcode_menu.png)
 
-7. Choose "+ Add snippet" and select "Add Your Custom Code (New Snippet)". When teh mouse is over the option, a new button is displayed "USe snippet". Click it
+7. Choose "+ Add snippet" and select "Add Your Custom Code (New Snippet)". Move your mouse over this option. This will cause a new button, "Use snippet" to be displayed. Click on it.
 
     ![Wordpress WPCode add new snippet](../images/WP-plugins-wpcode-add_new.png)
 
@@ -141,12 +140,12 @@ To test, we install and configure a Wordpress snippet to show the MySQL server w
         ```
     4. Scroll down to "insertion" and click "Run Everywhere" in "Location" to expand the section
     5. Select "Page-Specific"
-    6. Click on "INsert Before Paragraph"
+    6. Click on "Insert Before Paragraph"
 
     ![Wordpress snippet settings](../images/WP-plugins-wpcode-snippet_conf1.png)
 
-9. Keep the default insert before paragraph 1 and in the top of the page 
-    1. Click Inactive switch to activate
+9. Keep the default "Insert before paragraph 1" and at the top of the page 
+    1. Click Inactive switch to activate (the switch should turn blue)
     2. Click "Update" to save your changes
 
     ![Wordpress snippet save](../images/WP-plugins-wpcode-snippet_conf2.png)
