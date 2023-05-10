@@ -106,7 +106,7 @@ In order to test our read-replicas we need to create a snippet
 
     ![Wordpress plugins menu](../images/WP-plugins_menu.png)
 
-3. In the text box next to to the "Keyword" drop down (top right side of the page) enter "snippets" and press return (see below). This will bring up some available plugins
+3. In the text box next to to the "Keyword" drop down (top right side of the page) enter "snippets" and within a second or two the main page will populate with plugin choices (see below).
 
     ![Wordpress snippets plugin search](../images/WP-plugins-snippets_search.png)
 
@@ -114,11 +114,11 @@ In order to test our read-replicas we need to create a snippet
 
     ![Wordpress WPCode isntallation](../images/WP-plugins-snippets-wpcode-install.png)
 
-5. From left-hand-side menu choose Installed plugins, then press "Activate"under "WPCode Lite"
+5. From left-hand-side menu choose Installed plugins, then press "Activate" for the "WPCode Lite" plugin
 
     ![Wordpress WPCcode plugin activation](../images/WP-plugins-snippets-wpcode-activate.png)
 
-6. A new menu option called "Code Snippets" will now be visible in the left side menu.  
+6. A new menu option called "Code Snippets" will now be visible in the left side menu (you may have to scroll down to see it).  
     Click on "Code Snippets"
 
     ![Wordpress WPCOde snippet menu](../images/WP-plugins-wpcode_menu.png)
