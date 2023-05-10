@@ -14,7 +14,7 @@ Deploy Wordpress on Oracle Cloud Infrastructure (OCI) and MySQL Database Service
 
 [![Deploy to Oracle Cloud](https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg)](https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v4.0/stack_wordpress_mds.zip)
 
-<a href="https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v4.0/stack_wordpress_mds.zip" target="_blank"><img src="https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg></a>
+<a href="https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/swdavey/wphol/releases/download/v4.0/stack_wordpress_mds.zip" target="_blank"><img src="https://oci-resourcemanager-plugin.plugins.oci.oraclecloud.com/latest/deploy-to-oracle-cloud.svg"></a>
 
 2. You will automatically be directed to your OCI login page.
 Enter your tenancy name and click next
