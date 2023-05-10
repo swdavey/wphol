@@ -146,7 +146,8 @@ In order to test our read-replicas we need to create a snippet
 
 9. Scroll down to the Insertion section. Keep the defaults as they are: location should read "Insert before paragraph" and paragraph number should be "1" 
     1. Click Inactive switch to activate (the name won't change but the background of the switch should turn blue)
-    2. Click on the button in the top left of the screen next to the "Inactive" switch. If this is your first pass it will have a "Save" label, if this a subsequent pass (due to an earlier mistake) it will have an "Update" label.
+    
+    2. Click on the button next to the "Inactive" switch. It will either have a "Save Snippet" label or an "Update" label. If you have not already saved the snippet then it will read "Save Snippet" label. However, if you have already saved the snippet it will read "Update" (as shown below). Either way click this button to save your work. 
 
     ![Wordpress snippet save](../images/WP-plugins-wpcode-snippet_conf2.png)
 
