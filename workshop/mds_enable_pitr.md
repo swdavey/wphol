@@ -2,7 +2,7 @@
 
 **[Previous lab](./mds_read_replicas.md)**
 
-## Improve the Business Continuity: enable point in time recovery
+## Lab 5 - Improve the Business Continuity: enable point in time recovery
 
 ## Introduction
 We have now a highly available and read-scalable Wordpress website.  
@@ -20,12 +20,12 @@ It's now time to improve our backup by enabling PITR: we want to preserve our tr
   
 3. Click on the "More Actions" menu button, and from the drop down list select Edit backup plan.
   
-  ![OCI mds pitr edit backup plan](../images/OCI-mds-pitr-edit_backup_plan.png)
+  ![OCI mds PITR edit backup plan](../images/OCI-mds-pitr-edit_backup_plan.png)
 
   
 4. In the dialog check the box whose label is "Enable point-in-ime recovery". Click on the "Save Changes" button.
   
-  ![OCI mds pitr edit backup plan](../images/OCI-mds-pitr-checkbox.png)
+  ![OCI mds PITR edit backup plan](../images/OCI-mds-pitr-checkbox.png)
 
   
 5. The process to enable PITR will take a few minutes so please be patient.

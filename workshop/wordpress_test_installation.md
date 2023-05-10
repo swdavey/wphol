@@ -1,10 +1,12 @@
 # oci-wordpress-mds
 
 **[Previous lab](./lab_preparation.md)**
+
+## Lab 2 - Test Wordpress Installation
+
 ## Introduction
 In this lab you will test and get to know your Wordpress installation. This lab can only be started once the previous one is finished.
 
-## Test Wordpress Installation
 <details>
     <summary><h3>Task 1 - Confirm the ORM job has run successfully</h3></summary>
 
@@ -99,7 +101,7 @@ In order to complete the rest of the lab you will need to log into the applicati
 
     ![WP checkout](../images/WP_checkout.png)
 
-3. Once you have placed the order you should see an Order Confirmation screen. This is what the customer sees. As the owner/adminstrator of the site you will have to process the order. To do this you need to log in as the Wordpress administrator. You can achieve this by entering ht<span>tp://</span>public-ip-address/wp-admin and then entering the requested credentials. For example:
+3. Once you have placed the order you should see an Order Confirmation screen. This is what the customer sees. As the owner/administrator of the site you will have to process the order. To do this you need to log in as the Wordpress administrator. You can achieve this by entering ht<span>tp://</span>public-ip-address/wp-admin and then entering the requested credentials. For example:
 
     ![WP wp wp admin](../images/WP_wp_admin.png)
 

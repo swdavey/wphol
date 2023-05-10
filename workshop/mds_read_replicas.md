@@ -2,10 +2,10 @@
 
 **[Previous lab](./mds_enable_ha.md)**
 
-## Scale your service with Read Replicas
+## Lab 4 - Scale your service with Read Replicas
 
 ## Introduction
-Business is booming. We are open 24 hours a day and suffering no downtime. Hurrah! However, with our extensive menus and blog pages detailing how people can recreate our food at home the database is becomming stressed and causing our website to slow down. To overcome this we have decided to scale out the database with load-balanced read-replica instances. By doing this we will take most of the read load away from the primary database so ensuring our orders are processed properly. 
+Business is booming. We are open 24 hours a day and suffering no downtime. Hurrah! However, with our extensive menus and blog pages detailing how people can recreate our food at home the database is becoming stressed and causing our website to slow down. To overcome this we have decided to scale out the database with load-balanced read-replica instances. By doing this we will take most of the read load away from the primary database so ensuring our orders are processed properly. 
 
 To implement read replicas and make use of them we not only have to enable them in OCI but we also have to make sure Wordpress both knows about them and can make use of them. Therefore in this lab you will implement read-replicas in OCI and then perform some Wordpress admin, specifically installing and configuring Wordpress plugins that will enable the site to use the installed read-replicas. 
 
@@ -116,7 +116,7 @@ In order to test our read-replicas we need to create a snippet
 
 5. From left-hand-side menu choose Installed plugins, then press "Activate"under "WPCode Lite"
 
-    ![Wordpress WPCcode plugin activation](../images/WP-plugins-snippets-wpcode-activate.png)
+    ![Wordpress WPCode plugin activation](../images/WP-plugins-snippets-wpcode-activate.png)
 
 6. A new menu option called "Code Snippets" will now be visible in the left side menu.  
     Click on "Code Snippets"
@@ -146,7 +146,7 @@ In order to test our read-replicas we need to create a snippet
 
 9. Scroll down to the Insertion section. Keep the defaults as they are: location should read "Insert before paragraph" and paragraph number should be "1" 
     1. Click Inactive switch to activate (the name won't change but the background of the switch should turn blue)
-    2. Click on the button in the top left of the screen next to the "Inactive" switch. If this is your first pass it will have a "Save" label, if this a subsequent pass (due to an ealier mistake) it will have an "Update" label.
+    2. Click on the button in the top left of the screen next to the "Inactive" switch. If this is your first pass it will have a "Save" label, if this a subsequent pass (due to an earlier mistake) it will have an "Update" label.
 
     ![Wordpress snippet save](../images/WP-plugins-wpcode-snippet_conf2.png)
 
@@ -161,7 +161,7 @@ In order to test our read-replicas we need to create a snippet
     ![Return to My Restaurant web site](../images/WP-visit_website.png)
 
 2. Select "Sample page".  
-    You will see a new line under the title and before the main body of text you will see a label that says "host:" with an alphnumeric value. This value is the database host id - it will belong to either the primary or one of the read-replicas.
+    You will see a new line under the title and before the main body of text you will see a label that says "host:" with an alphanumeric value. This value is the database host id - it will belong to either the primary or one of the read-replicas.
  
     Refresh the page multiple times to see that the host changes periodically. By changing we can see that the requests are being load-balanced across the primary and its replicas.
 

@@ -7,7 +7,7 @@ This workshop focusses on how to effectively use the MySQL HeatWave Database Ser
 You will start by creating a simple development environment that will be built using the OCI Resource Manager and the terraform scripts deployed in this GitHub repository.
 This lab takes 15-20 minutes to complete.
 
-## Lab preparation
+## Lab 1 - Lab preparation
 Deploy Wordpress on Oracle Cloud Infrastructure (OCI) and MySQL Database Service (MDS) using Terraform modules.
 
 1. If you haven't already clicked on the Deploy to Oracle Cloud button the please click on it now.  
@@ -35,7 +35,7 @@ Choose **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username
    Notes:
 
     1. All the mandatory fields must have entries. For convenience all the password fields are preset to the same password. If you leave them as they are then you will be told the password once the build completes. If you change any of the passwords or indeed any of the other preset fields then you **must** make a note of the change because if you forget any of them then you may have to restart the lab.
-    2. For the purposes of the hands-on-lab **do not** check any of the boxes in the Use HA for MDS and Webservers sections. If you do then the build will take too long to complete for the hands-on-lab. You may wish to do a further build after the lab in order to test these items.
+    2. For the purposes of the hands-on-lab **do not** check any of the boxes in the Use HA for MDS and Web servers sections. If you do then the build will take too long to complete for the hands-on-lab. You may wish to do a further build after the lab in order to test these items.
     3. **Do not** check the Use Existing Infrastructure box.
     4. Assuming you follow the advice above, then all you should need to do is: 
    
