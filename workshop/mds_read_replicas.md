@@ -110,7 +110,7 @@ In order to test our read-replicas we need to create a snippet
 
     ![Wordpress snippets plugin search](../images/WP-plugins-snippets_search.png)
 
-4. Select the "WPCode" plugin and click on "Install now"
+4. Select the "WPCode" plugin and click on "Install Now"
 
     ![Wordpress WPCode isntallation](../images/WP-plugins-snippets-wpcode-install.png)
 
@@ -156,13 +156,14 @@ In order to test our read-replicas we need to create a snippet
 <summary><h3>Task 4 - Test read replicas</h3></summary>
 
 1. We can now test our read replicas.  
-    Click My Restaurant to return to our web site content
+    In the browser click on "My Restaurant" to return to the web site content
 
     ![Return to My Restaurant web site](../images/WP-visit_website.png)
 
 2. Select "Sample page".  
-    You will see a new line under the titkle and before the text "host: *XXX*".  
-    Refresh the page multiple times to see that the host changes periodically
+    You will see a new line under the title and before the main body of text you will see a label that says "host:" with an alphnumeric value. This value is the database host id - it will belong to either the primary or one of the read-replicas.
+ 
+    Refresh the page multiple times to see that the host changes periodically. By changing we can see that the requests are being load-balanced across the primary and its replicas.
 
     ![Sample page](../images/WP-sample_page.png)
 
