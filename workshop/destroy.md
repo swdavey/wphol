@@ -10,15 +10,15 @@ In order to save your credits you may wish to destroy all that has been built. T
 
 1. In the OCI console navigate to the Resource Manager. From the Hamburger menu, select Developer Services and then click on the Resource Manager item.
 
-![OCI resource manager](./images/OCI-resource-manager.png)
+![OCI resource manager](../images/OCI-resource-manager.png)
 
 2. In the Resource Manager page under the "Resource Manager" menu, click on "Jobs". If you are in the correct compartment then you should see an apply job at the top of the list. If you are not in the correct comparment, change to the correct compartment using the Compartment drop down list (on the left-hand-side of the page). Click on the apply job link.
 
-![OCI resource manager job list](./images/OCI-resource-manager-job_list.png)
+![OCI resource manager job list](../images/OCI-resource-manager-job_list.png)
 
 3. In the top left of the page, click on Stack Details. This will take you to the Stack that built the initial infrastructure.
 
-![OCI resource manager job stack details](./images/OCI-resource-manager-job_stack_details.png)
+![OCI resource manager job stack details](../images/OCI-resource-manager-job_stack_details.png)
 
 4. Click on the Destroy button.
 
