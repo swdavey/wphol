@@ -1,10 +1,10 @@
 # oci-wordpress-mds
 
-At the click of a button deploy a Wordpress site on Oracle Cloud Infrasture. The button will invoke a series of terraform scripts that will build all the infrastructure you need (networking, application server with Wordpress and a demo Restaurant app installed, MySQL database service) in your Oracle tenancy.
+At the click of a button deploy a Wordpress site on Oracle Cloud Infrasture. The button will invoke a series of terraform scripts that will build all the infrastructure you need (networking, application server with Wordpress and a demo restaurant app installed, MySQL database service) in your Oracle tenancy.
 
 The install forms the first part of a workshop that will develop the initial site from being standalone to highly available, and will then demonstrate how to further scale for read performance. 
 
-To access the workshop  either click [here](./workshop/workshop_instructions.md).
+To access the workshop either click [here](./workshop/workshop_instructions.md).
 
 To start the install process click on the button below.
 
