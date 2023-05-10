@@ -35,4 +35,4 @@ It's now time to improve our backup by enabling PITR: we want to preserve our tr
 
 ### This ends our workshop.
 Please remember that tenancy costs are calculated on running instances and space used.
-Shutdown the instances when you don't need them or use the stack to easily destroy what we did in this workshop. 
+Shutdown the instances when you don't need them or use the stack to ![easily destroy](./destroy.md) the infrastructure created in this workshop. 
