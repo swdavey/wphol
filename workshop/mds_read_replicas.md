@@ -106,7 +106,7 @@ In order to test our read-replicas we need to create a snippet
 
     ![Wordpress plugins menu](../images/WP-plugins_menu.png)
 
-3. In the text box next to to the "Keyword" drop down (top right side of the page) enter "snippets" and press return (see below). This will bring up some available plugins
+3. In the text box next to to the "Keyword" drop down (top right side of the page) enter "snippets" and within a second or two the main page will populate with plugin choices (see below).
 
     ![Wordpress snippets plugin search](../images/WP-plugins-snippets_search.png)
 
@@ -114,22 +114,22 @@ In order to test our read-replicas we need to create a snippet
 
     ![Wordpress WPCode isntallation](../images/WP-plugins-snippets-wpcode-install.png)
 
-5. From left-hand-side menu choose Installed plugins, then press "Activate"under "WPCode Lite"
+5. From left-hand-side menu choose Installed plugins, then press "Activate" for the "WPCode Lite" plugin
 
     ![Wordpress WPCode plugin activation](../images/WP-plugins-snippets-wpcode-activate.png)
 
-6. A new menu option called "Code Snippets" will now be visible in the left side menu.  
-    Click on "Code Snippets"
+6. A new menu option called "Code Snippets" will now be visible in the left side menu (you may have to scroll down to see it).  
+    Click on "Code Snippets".
 
     ![Wordpress WPCOde snippet menu](../images/WP-plugins-wpcode_menu.png)
 
-7. Click on "+ Add Snippet" in the left-hand menu and then hover your mouse over "Add Your Custom Code (New Snippet)" option. This will cause a new button, "Use snippet" to be displayed. Click on it.
+7. Click on **either** the "Add New" button in the main page **or** the "+ Add Snippet" menu item in the left-hand menu. Move your mouse over "Add Your Custom Code (New Snippet)" option. This will cause a new blue button to be displayed called "Use snippet". Click on it.
 
     ![Wordpress WPCode add new snippet](../images/WP-plugins-wpcode-add_new.png)
 
 8. In the Edit Snippet page (see image below):
     1. Enter the title of your snippet, use: "read replicas check"
-    2. Select "Code Type": PHP
+    2. Using the drop down on the right hand side of the screen change the code type from "HTML Snippet" to **"PHP Snippet"**
     3. insert this code in "Code Preview"
         ``` php
         <?php
@@ -138,15 +138,17 @@ In order to test our read-replicas we need to create a snippet
         echo "<strong>host:</strong> " . $result[0]->host;
         ?>
         ```
-    4. Scroll down to "insertion" and click "Run Everywhere" in "Location" to expand the section
+    4. Scroll down to the "Insertion" section and click "Run Everywhere" in "Location" to expand the section
     5. Select "Page-Specific"
     6. Click on "Insert Before Paragraph"
 
     ![Wordpress snippet settings](../images/WP-plugins-wpcode-snippet_conf1.png)
 
-9. Scroll down to the Insertion section. Keep the defaults as they are: location should read "Insert before paragraph" and paragraph number should be "1" 
-    1. Click Inactive switch to activate (the name won't change but the background of the switch should turn blue)
+9. The Insertion section should now show the location as "Insert before paragraph" and its paragraph number should be "1".
+    At the top of the page on the right side:
     
+    1. Click Inactive switch to activate (the name won't change but the background of the switch should turn blue)
+
     2. Click on the button next to the "Inactive" switch. It will either have a "Save Snippet" label or an "Update" label. If you have not already saved the snippet then it will read "Save Snippet" label. However, if you have already saved the snippet it will read "Update" (as shown below). Either way click this button to save your work. 
 
     ![Wordpress snippet save](../images/WP-plugins-wpcode-snippet_conf2.png)
