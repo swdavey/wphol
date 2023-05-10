@@ -42,9 +42,9 @@ To destroy the stack follow these steps:
 
 2. In the "Stack Details" click on the "More Actions" menu button and then select "Delete stack".
 
-![OCI resource manager destroy job stack details](./images/OCI-resource-manager-destroy_job_stack_details.png)
+![OCI resource manager destroy job stack details](./images/OCI-resource-manager-destroy_stack.png)
 
 3. In the confirmation dialog click on Delete. The stack will be deleted.
 
-![OCI resource manager destroy job stack confirm](./images/OCI-resource-manager-destroy_job_stack_confirm.png)
+![OCI resource manager destroy job stack confirm](./images/OCI-resource-manager-destroy_stack_confirm.png)
 </details>
