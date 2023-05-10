@@ -9,10 +9,12 @@ In order to save your credits you may wish to destroy all that has been built. T
 <summary><h3>Task 1 - Destroy your Wordpress site</h3></summary>
 
 1. In the OCI console navigate to the Resource Manager. From the Hamburger menu, select Developer Services and then click on the Resource Manager item.
+
+2. In the Resource Manager page under the "Resource Manager" menu, click on "Jobs". 
   
   ![OCI resource manager](../images/OCI-resource-manager.png)
-
-2. In the Resource Manager page under the "Resource Manager" menu, click on "Jobs". If you are in the correct compartment then you should see an apply job at the top of the list. If you are not in the correct comparment, change to the correct compartment using the Compartment drop down list (on the left-hand-side of the page). Click on the apply job link.
+  
+3.  You should see the (apply) job that built your infrastucture at the top of the list. Click on the job's link.
   
   ![OCI resource manager job list](../images/OCI-resource-manager-job_list.png)
 
@@ -37,14 +39,14 @@ The stack will still exist within your tenancy. You can apply this stack and rec
 To destroy the stack follow these steps:
 
 1. From the current Destroy Job page (from Task 1) click on the "Stack Details" link in the top left of the page.
-
-![OCI resource manager destroy job stack details](./images/OCI-resource-manager-destroy_job_stack_details.png)
+  
+  ![OCI resource manager destroy job stack details](../images/OCI-resource-manager-destroy_job_stack_details.png)
 
 2. In the "Stack Details" click on the "More Actions" menu button and then select "Delete stack".
-
-![OCI resource manager destroy job stack details](./images/OCI-resource-manager-destroy_stack.png)
+  
+  ![OCI resource manager destroy job stack details](../images/OCI-resource-manager-destroy_stack.png)
 
 3. In the confirmation dialog click on Delete. The stack will be deleted.
-
-![OCI resource manager destroy job stack confirm](./images/OCI-resource-manager-destroy_stack_confirm.png)
+  
+  ![OCI resource manager destroy job stack confirm](../images/OCI-resource-manager-destroy_stack_confirm.png)
 </details>
