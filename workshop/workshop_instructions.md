@@ -26,15 +26,15 @@ If you do not have an Oracle Account, you can claim an Oracle Cloud Free Trial a
 1. Create your starting environment  
 [click here](./lab_preparation.md)
 
-2. Test your wordpress installation  
+2. Test your Wordpress installation  
 [click here](./wordpress_test_installation.md)
 
-3. Improve the Business Continuity: enable the MySQL HeatWave Database Instance High Availability  
+3. Improve Business Continuity: enable the MySQL HeatWave Database Instance High Availability  
 [click here](./mds_enable_ha.md)
 
 4. Scale your service with Read Replicas  
 [click here](./mds_read_replicas)
 
-5. Improve the Business Continuity: enable point in time recovery  
+5. Improve Business Continuity: enable point in time recovery  
 [click here](./mds_enable_pitr.md)
 
