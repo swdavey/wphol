@@ -48,7 +48,7 @@ Choose **"Oracle Cloud Infrastructure Direct Sign-In"** and insert your username
     ![OCI create stack second page: mandatory variables](../images/OCI-create_stack_page2.png)
 
 5. On the third page verify that the checkbox **"Run apply"** is selected and then press **Create**
-    ![OCI create stack third page: confirm and create](../images/OCI-create_stack_page2.png)
+    ![OCI create stack third page: confirm and create](../images/OCI-create_stack_page3.png)
 
 6. The job will start and after few seconds you can see the logs.
     It will take 15-20 minutes to complete.
